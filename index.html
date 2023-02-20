@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h1>Javascript Quiz</h1>
+      </div>
+      <div class="quiz-score">
+        <p id="message">Let's go, countdown is on!</p>
+        <span id="timer-display">Time:</span>
+        <p>Your score: <span id="score">0%</span></p>
+      </div>
+      <p id="total-time" style="display: none">
+        Total time: <span id="timer"></span>
+      </p>
+      <div class="quiz-form">
+        <form id="quiz-form">
+          <p>1) What is the best programming language?</p>
+          <input type="radio" id="java" name="q1" value="a" />
+          <label for="java">Java</label><br />
+          <input type="radio" id="python" name="q1" value="b" />
+          <label for="python">Python</label><br />
+          <input type="radio" id="javascript" name="q1" value="c" />
+          <label for="javascript">JavaScript</label>
+          <br />
+          <p>2) Is JavaScript an OOP language?</p>
+          <input type="radio" id="no" name="q2" value="a" />
+          <label for="no">No</label><br />
+          <input type="radio" id="maybe" name="q2" value="b" />
+          <label for="maybe">Maybe</label><br />
+          <input type="radio" id="yes" name="q2" value="c" />
+          <label for="yes">Yes</label>
+          <br />
+          <p>3) Which type of functions doesn't exist in JavaScript?</p>
+          <input type="radio" id="arrow" name="q3" value="a" />
+          <label for="arrow">Arrow</label><br />
+          <input type="radio" id="callback" name="q3" value="b" />
+          <label for="callback">Callback</label><br />
+          <input type="radio" id="life" name="q3" value="c" />
+          <label for="life">"LIFE"</label>
+          <br />
+          <p>4) What is programming interface for web documents?</p>
+          <input type="radio" id="pom" name="q4" value="a" />
+          <label for="pom">POM</label><br />
+          <input type="radio" id="bom" name="q4" value="b" />
+          <label for="bom">BOM</label><br />
+          <input type="radio" id="dom" name="q4" value="c" />
+          <label for="dom">DOM</label>
+          <br />
+          <p>5) Which is not a format of response to an Ajax request?</p>
+          <input type="radio" id="html" name="q5" value="a" />
+          <label for="html">HTML</label><br />
+          <input type="radio" id="xml" name="q5" value="b" />
+          <label for="xml">XML</label><br />
+          <input type="radio" id="css" name="q5" value="c" />
+          <label for="css">CSS</label>
+          <br />
+          <br />
+          <button id="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
